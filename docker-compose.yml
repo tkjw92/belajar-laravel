@@ -1,0 +1,7 @@
+services:
+  app:
+    image: n12412/laravel-server
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html
