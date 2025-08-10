@@ -1,7 +1,12 @@
 services:
   app:
-    image: n12412/laravel-server
+    image: n12412/laravel-server:mini
     ports:
       - "80:80"
     volumes:
       - ./src:/var/www/html
+
+  db:
+    image: mariadb
+    environment:
+      MARIADB_ROOT_PASSWORD: root
